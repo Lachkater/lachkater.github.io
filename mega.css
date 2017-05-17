@@ -54,7 +54,7 @@
   top: 110%;
   left: -66%;
   z-index: 1000;
-  display: inline-block;
+  display: none;
   min-width: 300px;
   min-height: 140px;
   max-width: 800px;
