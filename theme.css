@@ -1,0 +1,36 @@
+body {
+  padding-top: 70px;
+}
+footer {
+  background-color: #222;
+  color: #9d9d9d;
+  margin-top: 30px;
+  min-height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+
+
+.lead {
+  text-align: center;
+}
+
+.mega-menu > li > a::after {
+  content: "<b class='caret'></b>";
+}
