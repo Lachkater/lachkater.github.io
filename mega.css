@@ -49,6 +49,15 @@
   position: relative;
 }
 
+
+.tworows {
+	width: 480px;
+}
+
+.threerows {
+	width: 720px;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 110%;
@@ -83,7 +92,6 @@
 }
 .megamenu> li > ul > li {
   list-style: none;
-  width: 200px;
 }
 .megamenu> li > ul > li > a {
   display: block;
@@ -95,7 +103,6 @@
   white-space: normal;
   overflow: hidden;
   white-space: nowrap;
-  width: 220px;
 }
 .megamenu> li ul > li > a:hover,
 .megamenu> li ul > li > a:focus {
