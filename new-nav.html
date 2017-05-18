@@ -1,0 +1,262 @@
+<head>
+  <meta charset="utf-8">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="mega.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+    
+
+	<script type="text/javascript">
+    // Dropdown Menu Fade    
+		jQuery(document).ready(function(){
+    	$(".dropdown").click(
+    	    function() { $('.dropdown-menu', this).stop().fadeIn("slow");
+    	    },
+    	    function() { $('.dropdown-menu', this).stop().fadeOut("slow");
+    	});
+	  });
+	</script>
+</head>
+
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="logo.png"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+
+			<li class="menu-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>				
+				<ul class="dropdown-menu megabox megamenu row threerows">
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Infrastructure Security Assesment</li>
+							<li class="divider"></li>
+							<li><a href="#">Lorem Ipsum</a></li>
+							<li><a href="#">dolor sit</a></li>
+							<li><a href="#">Das Leben</a></li>
+							<li><a href="#">Das Universum</a></li>
+							<li><a href="#">Der ganze Rest</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Security Testing</li>
+							<li class="divider"></li>
+							<li><a href="#">Threat Modeling</a></li>
+							<li><a href="#">Static Source Code Analysis</a></li>
+							<li><a href="#">Fuzzing</a></li>
+							<li><a href="#">Penetration Testing</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Workshops</li>
+							<li class="divider"></li>
+							<li><a href="#">Workshop Übersicht</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Threat Modeling</a></li>
+							<li><a href="#">Secure Web Development</a></li>
+							<li><a href="#">Security Testing Process</a></li>
+							<li><a href="#">Hacking</a></li>
+							
+						</ul>
+					</li>		
+				</ul>
+			</li> <!-- menu large -->
+    <!--
+			<li class="menu-large">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services mit Bildern </a>
+		    <ul class=" dropdown-menu  megabox megamenu row">
+		      
+		      <li>
+		      
+			    	<div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="as.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Application Security</a>
+			      	</div>
+			    	</div>
+
+			      <div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="pt.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Penetration Testing</a>
+			      	</div>
+			    	</div>
+			        
+			      <div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="co.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Compliance Testing</a>
+			      	</div>
+			    	</div>
+
+		      	<div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="re.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Research</a>
+			      	</div>
+			    	</div>
+
+		      	<div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="tm.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Threat Modeling</a>
+			      	</div>
+			    	</div>
+
+			    	<div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="sd.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Secure Development</a>
+			      	</div>
+			    	</div>
+
+			    	<div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="tr.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Workshops</a>
+			      	</div>
+			    	</div>
+
+            <div class="col-sm-4 col-md-3">
+			   	  	<div class="row">
+			  	   		<a href="#" class="nav-img">
+									<img src="fo.png" />
+			        	</a>
+			        </div>
+			        <div class="row nav-txt">
+			        	<a href="#">Computer Forensics</a>
+			      	</div>
+			    	</div>
+
+					</li>	
+		  	</ul>
+      </li>
+    -->
+
+			<li class="menu-large">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Resourcen </a>
+
+				<ul class="dropdown-menu megabox megamenu row threerows">
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Neues und Presse</li>
+							<li class="divider"></li>
+							<li><a href="#">Media Coverage</a></li>
+							<li><a href="#">Press Release</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Publikationen</li>
+							<li class="divider"></li>
+							<li><a href="#">Papers</a></li>
+							<li><a href="#">Zero Days</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							<li class="dropdown-header">Blog und Newsletter</li>
+							<li class="divider"></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</li>
+
+  			</ul>
+      </li>
+			
+      <li class="menu-large">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Über uns </a>
+				<ul class="dropdown-menu megabox megamenu row tworows">
+					<li class="col-sm-6">
+            <ul>
+            <li><a href="#">Leitsätze</a></li>
+            <li><a href="#">Partner/Referenzen</a></li>
+            <li><a href="#">Karierie</a></li>
+            </ul>
+
+					<li class="col-sm-6">
+            <ul>
+            <li><a href="#">Standorte</a></li>
+            <li><a href="#">Wegbeschreibung</a></li>
+            <li><a href="#">Impressum</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-large">
+		    <a href="#"> Kontakt </a>
+      </li>
+      <li class="menu-large">
+		    <a href="#"> Blog </a>
+      </li>
+		</div> <!-- navbar -->
+  </div>
+</div>
+
+<div class="container">
+
+	<h2>Navbar 2.0</h2>
+  Ideen für die neue Navbar. Wer selber rumspielen mag - Viel Spaß!
+  <br><code>ssh user@192.168.1.36</code><br>
+  <code>cd wpc/wp/test</code><br>
+  <code>vim -p new-navbar.html mega.css</code><br><br>
+ 	<h4>TODO</h4>
+
+ 	<ul>
+ 		<li>Bei kleinem Browser Fenster zerschießt es das Design.</li>
+ 	</ul>
+
+ 	<h4>Feedback</h4>
+	<ul>
+		<li>Hier könnte dein Feedback stehen!</li>
+	</ul>
+  <br>
+	<h4>Boilerplate</h4>
+ 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
