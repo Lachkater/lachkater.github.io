@@ -83,6 +83,7 @@
 }
 .megamenu> li > ul > li {
   list-style: none;
+  width: 200px;
 }
 .megamenu> li > ul > li > a {
   display: block;
