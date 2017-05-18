@@ -95,6 +95,7 @@
   white-space: normal;
   overflow: hidden;
   white-space: nowrap;
+  width: 220px;
 }
 .megamenu> li ul > li > a:hover,
 .megamenu> li ul > li > a:focus {
