@@ -47,12 +47,12 @@
 
 .tworows {
   width: 420px;
-  left: -66%;
+  left: -300% !important;
 }
 
 .threerows {
   width: 660px;
-  left: -66%;
+  left: -340% !important;
 }
 
 .dropdown-menu {
