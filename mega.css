@@ -12,7 +12,7 @@
 .dropdown-toggle::after {
   /* magic caret */
   content: " ";
-  display: none;
+  display: inline-block;
   width: 0;
   height: 0;
   margin-left: 2px;
