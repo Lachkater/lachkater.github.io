@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function get_config_repo() {
+get_config_repo() {
 	echo "Downloading and installing dotfiles..."
 	git clone https://github.com/Lachkater/config.git
 	mv -i config/.htop ~
