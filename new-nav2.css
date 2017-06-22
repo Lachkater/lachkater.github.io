@@ -25,18 +25,11 @@
   color: #fff;
 }
 
+
 .navbar-nav > li > a {
-	padding-top: 5px;
-	padding-bottom: 5px;
+    font-size: 16px;
 }
 
-.navbar-nav > p {
-	margin-top: 10px;
-/*	padding-top: 5px;
-	padding-bottom: 5px; */
-	color:#fff;
-	text-align: right;
-}
 
 .dropdown-toggle::after {
   /* magic caret */
@@ -58,7 +51,6 @@
   display: block;
   padding-top: 10px;
   padding-bottom: 15px;
-  font-size: 20px;
 }
 
 .nav-img > img {
@@ -99,6 +91,7 @@
 
 .menu-large {
   position: relative !important;
+  margin-top: 20px;
 }
 
 .megamenu{

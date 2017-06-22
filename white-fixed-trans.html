@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="new-nav2.css" rel="stylesheet">
+  <link href="new-nav3-fixed.css" rel="stylesheet">
   <script type="text/javascript" src="jquery-3.2.1.js"></script>
   <script type="text/javascript" src="bootstrap.min.js"></script>
     
@@ -9,30 +9,57 @@
 	<script type="text/javascript">
     // Dropdown Menu Fade    
 		jQuery(document).ready(function(){
-    	$(".dropdown").click(
-    	    function() { $('.dropdown-menu', this).stop().fadeIn("slow");
+    	$(".dropdown").hover(
+    	    function() { $('.dropdown-menu', this).stop().slideDown("slow");
     	    },
     	    function() { $('.dropdown-menu', this).stop().fadeOut("slow");
     	});
 	  });
 	</script>
+
+<!--
+<script>
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {
+        $('.navbar').fadeOut();
+    }
+    else {
+        $('.navbar').fadeIn();
+    }
+},false);
+</script>
+-->
+<script type="text/javascript">
+$(window).scroll(function() {
+    if($(this).scrollTop() > 80) {
+        $('.navbar-fixed-top').addClass('shrink');
+        
+    } else {
+        $('.navbar-fixed-top').removeClass('shrink');
+        
+    }
+});
+</script>
 </head>
 
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container">
+
+<div class="navbar navbar-default navbar-fixed-top">
+
+<div class="container">  
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="logo.png"></a>
+      <a class="navbar-brand" href="#"><img src="logo.png"></img></a>
+      
+
     </div>
 
     <div class="navbar-collapse collapse">
 
 			<ul class="nav navbar-nav navbar-right">
-			<p>01337 1234567-1    Deutsch<p/>
 			<li class="menu-large">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>				
 				<ul class="dropdown-menu megabox megamenu row threerows">
@@ -72,105 +99,6 @@
 					</li>		
 				</ul>
 			</li> <!-- menu large -->
-    <!--
-			<li class="menu-large">
-		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services mit Bildern </a>
-		    <ul class=" dropdown-menu  megabox megamenu row">
-		      
-		      <li>
-		      
-			    	<div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="as.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Application Security</a>
-			      	</div>
-			    	</div>
-
-			      <div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="pt.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Penetration Testing</a>
-			      	</div>
-			    	</div>
-			        
-			      <div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="co.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Compliance Testing</a>
-			      	</div>
-			    	</div>
-
-		      	<div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="re.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Research</a>
-			      	</div>
-			    	</div>
-
-		      	<div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="tm.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Threat Modeling</a>
-			      	</div>
-			    	</div>
-
-			    	<div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="sd.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Secure Development</a>
-			      	</div>
-			    	</div>
-
-			    	<div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="tr.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Workshops</a>
-			      	</div>
-			    	</div>
-
-            <div class="col-sm-4 col-md-3">
-			   	  	<div class="row">
-			  	   		<a href="#" class="nav-img">
-									<img src="fo.png" />
-			        	</a>
-			        </div>
-			        <div class="row nav-txt">
-			        	<a href="#">Computer Forensics</a>
-			      	</div>
-			    	</div>
-
-					</li>	
-		  	</ul>
-      </li>
-    -->
 
 			<li class="menu-large">
 		    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Resourcen </a>
@@ -230,6 +158,9 @@
       <li class="menu-large">
 		    <a href="#"> Blog </a>
       </li>
+      <li class="menu-large">
+		   <a href="#"> <img src="de.png" width="28px" height="16px"></img></a>
+      </li>
 		</div> <!-- navbar -->
   </div>
 </div>
@@ -253,6 +184,27 @@
 	</ul>
   <br>
 	<h4>Boilerplate</h4>
+ 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ 	<h4>Boilerplate</h4>
+ 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ 	<h4>Boilerplate</h4>
+ 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ 	<h4>Boilerplate</h4>
  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
