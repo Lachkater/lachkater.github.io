@@ -1,23 +1,18 @@
-.boundingbox {
-  background-color: #F00;
-  height: 300px;
-  width: 200px;
-}
 
 .navbar-default {
-  
   background-color: #fff;
   transition: height 0.33s ease-in-out, background-color 0.33s ease-in-out;;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+/*
+.menu-large:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
 }
 
 .dropdown-menu li:hover .sub-menu {
-    visibility: visible;
+  visibility: visible;
 }
-
+*/
 .navbar {
   height: 72px;
 }
@@ -36,22 +31,17 @@
 }
 
 .shrink .navbar-brand > img {
-  /*margin: 0px 0px -32px 0px;*/
-  /*height: 40px;
-  width: auto; */
   margin: -17px 0px;
   transform: scale(0.66);
   transition: all 0.33s ease-in-out;
 }
-
 
 .navbar-brand > img {
   width: 75%;
   height: auto;
   margin: -10px 0px;
   transform: scale(1);
-  transition: all 0.33s ease-in-out;
-  
+  transition: all 0.33s ease-in-out;  
 }
 
 .navbar-default .navbar-brand {
@@ -62,18 +52,18 @@
   color: #444;
 }
 
-
 .navbar-nav > li > a {
-    font-size: 16px;
+  font-size: 16px;
 }
-.navbar-default .navbar-nav > li > a:focus{
-    color: #0099ee;
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0099ee;
 }
+
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #0099ee;
+  color: #0099ee;
 }
-
 
 .dropdown-toggle::after {
   /* magic caret */
@@ -91,6 +81,7 @@
 .dropdown-header {
   color: #0099FF;
 }
+
 .nav-txt > a {
   text-align: center;
   display: block;
@@ -118,7 +109,7 @@
 
 .dropdown-menu {
   position: absolute;
-  top: 110%;
+  top: 100%;
   left: -66%;
   z-index: 1000;
   display: none;
@@ -147,6 +138,7 @@
 }
 
 .megamenu{
+  margin-top: 300px;
   padding: 20px 0px;
 }
 .megamenu> li > ul {
@@ -189,6 +181,7 @@
   color: #0099ee;
   font-size: 18px;
 }
+
 @media (max-width: 1180px) {
    .navbar-nav > li > a {
     font-size: 13px;
@@ -197,15 +190,9 @@
   .nav > li > a {
     padding: 15px 5px;
   }
-  /*
-  .navbar-header {
-    width: 220px;
-  }
-  */
 }
+
 @media (max-width: 768px) {
-
-
   .megamenu{
     margin-left: 0 ;
     margin-right: 0 ;
@@ -238,5 +225,3 @@
     border-radius: 25px;
   }
 }
-
-
