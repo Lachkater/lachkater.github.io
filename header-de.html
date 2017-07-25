@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="<?php echo bloginfo('template_url'); ?>/images/favicon.png" type="image/gif" sizes="16x16" rel="icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00be00" />
+  <meta property="og:title" content="softScheck" />
+  <meta property="og:site_name" content="softScheck"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/wp-content/uploads/2016/02/softscheck-facebook-banner.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content="320" />
+  <meta property="og:image:height" content="320" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+
+  <script type="text/javascript" src="jquery-3.2.1.js"></script>
+  <link href="bootstrap.min.css" rel="stylesheet"> 
+  <link href="newnav.css" rel="stylesheet"> 
+  
+
+  <!-- resize navbar when scrolled more than 50px -->
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 50) {
+        $('.navbar-fixed-top').addClass('shrink');
+      } else {
+        $('.navbar-fixed-top').removeClass('shrink');
+      }
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="top_header">
+
+      <div class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">  
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home"><img src="/test/logo.png"></img></a>
+
+
+          </div>
+
+          <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+              <li class="menu-large">
+                <!-- TODO: replace with wp menu scheme -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>        
+                <ul class="dropdown-menu megamenu row threerows">
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Support</li>
+                      <li class="divider"></li>
+                      <li><a href="#">Secure Development Lifecycle</a></li>
+                      <li><a href="#">SQUARE</a></li>
+                      <li><a href="#">BSI KRITIS</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Security Testing</li>
+                      <li class="divider"></li>
+                      <li><a href="/de/threat-modeling">Threat Modeling</a></li>
+                      <li><a href="/security-consulting/static-code-analysis">Static Source Code Analysis</a></li>
+                      <li><a href="/de/fuzzing">Fuzzing</a></li>
+                      <li><a href="/de/penetration-testing2">Penetration Testing</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Workshops</li>
+                      <li class="divider"></li>
+                      <li><a href="/de/workshops">Workshop Übersicht</a></li>
+                      <li class="divider"></li>
+                      <li><a href="/de/workshops/thread-modeling">Threat Modeling</a></li>
+                      <li><a href="/de/workshops/secure-web-development">Secure Web Development</a></li>
+                      <li><a href="/de/workshops/security-testing-process">Security Testing Process</a></li>
+                      <li><a href="/de/workshops/hacking">Hacking</a></li>
+
+                    </ul>
+
+                  </li>   
+                </ul>
+
+              </li> <!-- menu large -->
+
+              <li class="menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Resourcen </a>
+
+                <ul class="dropdown-menu megamenu row threerows">
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Neues und Presse</li>
+                      <li class="divider"></li>
+                      <li><a href="/berichte-dritter">Medien</a></li>
+                      <li><a href="/pressemittelungen">Pressemittelungen</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Publikationen</li>
+                      <li class="divider"></li>
+                      <li><a href="/papers">Papers</a></li>
+                      <li><a href="/zero-days">Zero Days</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4">
+                    <ul>
+                      <li class="dropdown-header">Blog und Newsletter</li>
+                      <li class="divider"></li>
+                      <li><a href="/softscheck-blog">Blog</a></li>
+                      <li><a href="/newsletter">Newsletter</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Über uns </a>
+                <ul class="dropdown-menu megamenu row tworows">
+                  <li class="col-sm-6">
+                    <ul>
+                      <li><a href="/ueber-uns/leitsaetze">Leitsätze</a></li>
+                      <li><a href="/ueber-uns/partner">Partner/Referenzen</a></li>
+                      <li><a href="/ueber-uns/karriere">Karierie</a></li>
+                    </ul>
+
+                    <li class="col-sm-6">
+                      <ul>
+                        <li><a href="/ueber-uns/standorte">Standorte</a></li>
+                        <li><a href="/ueber-uns/wegbeschreibung">Wegbeschreibung</a></li>
+                        <li><a href="/impressum">Impressum</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-large">
+                  <a href="/kontaktieren-sie-uns"> Kontakt </a>
+                </li>
+                <li class="menu-large">
+                  <a href="/softscheck-blog"> Blog </a>
+                </li>
+                <li class="menu-large">
+					DE
+                </li>
+              </ul>
+              </div> <!-- navbar -->
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
