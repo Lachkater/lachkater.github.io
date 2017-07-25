@@ -178,12 +178,12 @@ body > .container {
   /*  uncomment to enable hover
       currently broken (hover does not disable click)
   */
-  /*
+  
   .menu-large:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
   }
-
+  
 }
 
 @media (max-width: 1180px) {
@@ -291,7 +291,7 @@ body > .container {
 
   .nav>li>a:hover
   .nav>li>a:focus {
-    background-color: #eee !important
+    background-color: #eee !important;
   }
 
   .navbar-brand > img {
