@@ -301,11 +301,9 @@ body > .container {
   }
 }
 
-/*
 .menu-large:hover .dropdown-menu {
   display: block;
 }
-*/
 
 .menu-large:focus .dropdown-menu {
   display: block;
