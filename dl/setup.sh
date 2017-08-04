@@ -18,9 +18,11 @@ fi
 # Arch based OS
 if [ -f /usr/bin/pacman ]; then
 	echo "Arch based OS detected, installing core progs..."
-	sudo pacman -Sy --noconfirm curl git htop vim zsh
+	sudo pacman -Sy --noconfirm binutils curl git htop vim zsh
 	# to make packer install packer work...
-	sudo pacman -S --asdeps --noconfirm jshon expac
+	sudo pacman -S --asdeps --noconfirm jshon expac fakeroot
+	# to build C programs
+	sudo pacman -S --noconfirm gcc make
 	curl -O https://raw.githubusercontent.com/keenerd/packer/master/packer
 	chmod a+x packer
 	./packer -S --noconfirm packer
