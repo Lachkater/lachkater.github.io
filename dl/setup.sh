@@ -3,7 +3,7 @@
 get_config_repo() {
 	echo "Downloading and installing dotfiles..."
 	git clone https://github.com/Lachkater/config.git
-	mv -i config/.htop ~
+	mv -i config/.htop ~/.config/htop/htoprc
 	mv -i config/.zshrc ~
 	mv -i config/.vimrc ~
 }
@@ -23,10 +23,10 @@ if [ -f /usr/bin/pacman ]; then
 	sudo pacman -S --asdeps --noconfirm jshon expac fakeroot
 	# to build C programs
 	sudo pacman -S --noconfirm gcc make
-	curl -O https://raw.githubusercontent.com/keenerd/packer/master/packer
-	chmod a+x packer
-	./packer -S --noconfirm packer
-	rm packer
+	curl -O https://raw.githubusercontent.com/rmarquis/pacaur/master/pacaur	
+	chmod a+x pacaur
+	./pacaur -S --noconfirm pacaur
+	rm pacaur
 fi
 
 # Redhat based OS
